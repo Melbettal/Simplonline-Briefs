@@ -1,64 +1,298 @@
 <!DOCTYPE html>
-<div lang="fr">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./res/css/Style.css">
-    <!-- <script src="./res/js/script.js"></script> -->
+    <script src="./res/js/script.js"></script>
     <title>HOME</title>
 </head>
 
-<div/div>
+<body>
     <!-- this the Navbar -->
-        <div class="navbar">
-            <img src="./res/img/logoo.png" alt="logo">
-            <label for="toggle">&#9776;</label>
-            <input type="checkbox" id="toggle" />
-            <div class="menu">
-                <a class="navtext" href="#home">HOME</a>
-                <a class="navtext" href="#news">ABOUT US</a>
-                <a class="navtext" href="#contact">SERVICES</a>
-                <a class="navtext" href="#about">PROMO</a>
-                <a class="navtext" href="#about">GALERIE</a>
-                <a class="navtext" href="#about">CONTACT US</a>
-            </div>
+    <div class="navbar">
+        <img src="./res/img/logoo.png" alt="logo">
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle" />
+        <div class="menu">
+            <a class="navtext" href="#home">HOME</a>
+            <a class="navtext" href="./About Us.html">ABOUT US</a>
+            <a class="navtext" href="#contact">SERVICES</a>
+            <a class="navtext" href="#about">PROMO</a>
+            <a class="navtext" href="#about">GALERIE</a>
+            <a class="navtext" href="#about">CONTACT US</a>
         </div>
-        <!-- this the background img -->
+    </div>
+    <!-- this the background img -->
     <div class="Pic">
         <div class="container">
-        <div class="Pictitle">Find Your Best<br/>
-                              Travel Destination</div>
-        <div class="picpara">TRAVILIA is a Travel agency created by passionate professionals.<br/>
-            With our expertise in tourism, our desire to reach our clients’ high<br/> 
-            expectations along with our dedication.</div>  
-        <div class="button">EXPLORE 
-            <img src="./res/img/but.png" class="imgbut" alt="button">
-        </div>      
+            <div class="Pictitle">Find Your Best<br />
+                Travel Destination</div>
+            <div class="picpara">TRAVILIA is a Travel agency created by passionate professionals.<br />
+                With our expertise in tourism, our desire to reach our clients’ high<br />
+                expectations along with our dedication.</div>
+            <div class="button">EXPLORE
+                <img src="./res/img/but.png" class="imgbut" alt="button">
+            </div>
         </div>
     </div>
-    <div class="Pictitleresp">Find Your Best<br/>
-        Travel Destination</div>
     <div class="containeresp">
-        <div class="picpararesp">TRAVILIA is a Travel agency created by passionate professionals.<br/>
-            With our expertise in tourism, our desire to reach our clients’ high<br/> 
-            expectations along with our dedication.</div>  
-        <div class="buttonresp">EXPLORE 
+        <div class="picpararesp">TRAVILIA is a Travel agency created by passionate professionals.<br />
+            With our expertise in tourism, our desire to reach our clients’ high<br />
+            expectations along with our dedication.</div>
+        <div class="buttonresp">EXPLORE
             <img src="./res/img/but.png" class="imgbut" alt="button">
-        </div>      
-        </div>
-        <div class="Pictxt">
-
-        
-           
-
-            
         </div>
     </div>
-    
-    <!-- <script>
-        function myFunction(x) {
-          x.classList.toggle("change");
-        }
-        </script> -->
+    <div>
+        <div id="explore">
+            <img src="./res/img/noPath2.png" id="noPath2">
+            <h1 id="hexpo">Travel inspiration</h1>
+            <p id="pexpo">Our latest travel tips, exper
+                hacks and industry insights to help make your journey
+                one to remember.</p>
+
+            <div class="enoPath">
+                <img src="./res/img/enoPath1.png" id="enoPath">
+                <img src="./res/img/enoPath2.png" id="enoPath">
+                <img src="./res/img/enoPath3.png" id="enoPath" class="enoPathdis">
+                <img src="./res/img/enoPath4.png" id="enoPath" class="enoPathdis">
+            </div>
+            <p id="pex">Explore</p>
+            <img src="./res/img/cercle.png" id="cercle">
+        </div>
+        <img src="./res/img/noPath.png" id="noPath">
+    </div>
+
+    <div class="maps">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d165337.2975983208!2d55.13079563683028!3d25.14569678770278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sma!4v1578175739330!5m2!1sen!2sma"
+            width="600" height="600" frameborder="0" style="border:0;" allowfullscreen="" id="dubai">
+        </iframe>
+        <h1 id="titlemaps">where to find us</h1>
+        <p id="pmaps">Find the destination of your dreams, make your
+            reservation and get quick access to your plane ticket at
+            the best price.</p>
+        <img src="./res/img/noPathDubai.png" id="jardin">
+        <div id="txtflsh">
+            <h1 id="hflsh">SEARCH</h1>
+            <h1 id="hflsh">LOCATE</h1>
+        </div>
+        <div id="flsh">
+            <img src="./res/img/flsh.png" id="imgflsh">
+            <img src="./res/img/flsh.png" id="imgflsh">
+        </div>
+        <p id="pflsh"> Know where you are and find the nearest of our agency to where you at.
+        </p>
+        <input type="button" class="btnflsh" value="search">
+    </div>
+
+
+
+    <!-- this the gallery -->
+    <section id="promo">
+        <div class="tte">OUR DESTINATIONS</div>
+        <div class="container">
+            <div class="content">
+                    <div class="card-promo">
+                        <div class="promo-img">
+                            <img src="./res/img/pic4.png" alt="">
+                        </div>
+                        <div class="promo-content">
+                            <div class="contry">
+                                <h4>Dubai</h4>
+                            </div>
+                            <div class="price">
+                                <p>Starting from 1690 $</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-promo">
+                        <div class="promo-img">
+                            <img src="./res/img/istanbul.jpg" alt="">
+                        </div>
+                        <div class="promo-content">
+                            <div class="contry">
+                                <h4>THAILANDE – MALAISIE SINGAPOUR </h4>
+                            </div>
+                            <div class="price">
+                                <p>Starting from 2540 $</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-promo">
+                        <div class="promo-img">
+                            <img src="./res/img/thailand.jpg" alt="">
+                        </div>
+                        <div class="promo-content">
+                            <div class="contry">
+                                <h4>İstanbul - February</h4>
+                            </div>
+                            <div class="price">
+                                <p>Starting from 620 $</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-promo">
+                        <div class="promo-img">
+                            <img src="./res/img/saharien dubai.png" alt="">
+                        </div>
+                        <div class="promo-content">
+                            <div class="contry">
+                                <h4>Saharien Dubai</h4>
+                            </div>
+                            <div class="price">
+                                <p>Starting from 1700 $</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-promo">
+                        <div class="promo-img">
+                            <img src="./res/img/egypt.jpg" alt="">
+                        </div>
+                        <div class="promo-content">
+                            <div class="contry">
+                                <h4>Egypt - le grand tour</h4>
+                            </div>
+                            <div class="price">
+                                <p>Starting from 1430 $</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-promo">
+                        <div class="promo-img">
+                            <img src="./res/img/india.jpg" alt="">
+                        </div>
+                        <div class="promo-content">
+                            <div class="contry">
+                                <h4>India - Golden Triangle</h4>
+                            </div>
+                            <div class="price">
+                                <p>Starting from 1910 $</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-promo">
+                        <div class="promo-img">
+                            <img src="./res/img/antalya.jpg" alt="">
+                        </div>
+                        <div class="promo-content">
+                            <div class="contry">
+                                <h4>Antalya vol direct</h4>
+                            </div>
+                            <div class="price">
+                                <p>Starting from 1190 $</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-promo">
+                        <div class="promo-img">
+                            <img src="./res/img/europe.jpg" alt="">
+                        </div>
+                        <div class="promo-content">
+                            <div class="contry">
+                                <h4>Circuit Europe de l’Est</h4>
+                            </div>
+                            <div class="price">
+                                <p>Starting from 1590 $</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-promo">
+                        <div class="promo-img">
+                            <img src="./res/img/rio.png" alt="">
+                        </div>
+                        <div class="promo-content">
+                            <div class="contry">
+                                <h4>Brésil – Rio De Janeiro</h4>
+                            </div>
+                            <div class="price">
+                                <p>Starting from 1250 $</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- this is partners part -->
+    <div class="tle">OUR PARTNERS</div>
+    <div>
+        <img src="./res/img/1.png" class="imageees" alt="" >
+        <img src="./res/img/2.png" class="imageees" alt="">
+        <img src="./res/img/3.png" class="imageees" alt="">
+        <img src="./res/img/4.png" class="imageees" alt="">
+    </div>
+
+
+
+    <!-- this is the footer -->
+    <div class="page">
+        <section id="contact">
+            <div class="container">
+                <div class="content">
+                    <h3>Contact us</h3>
+                    <p>Your opinions matters, write whatever !</p>
+                    <input type="text" placeholder=" tell us. ">
+                    <a href="#"> <i class="fas fa-envelope"></i> send</a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="content">
+                    <div class="about">
+                        <img src="./res/img/logoo.png" alt="">
+                        <p>TRAVILIA is at your service to develop
+                            tailor-made trips that truly meet your requirements.
+                            Whether you choose to escape alone, as a couple,
+                            as a family or with a group of friends, we will make
+                            each trip an exceptional experience for you. </p>
+                    </div>
+                    <div class="quick-links">
+                        <h3>QUICK LINKS</h3>
+                        <a class="navtext" href="#home">HOME</a>
+                        <a class="navtext" href="#news">ABOUT US</a>
+                        <a class="navtext" href="#contact">SERVICES</a>
+                        <a class="navtext" href="#about">PROMO</a>
+                        <a class="navtext" href="#about">GALERIE</a>
+                        <a class="navtext" href="#about">CONTACT US</a>
+                    </div>
+                    <div class="contact">
+                        <h3>CONTACT US</h3>
+                        <p>Feel free to get in touch with us via phone or send us a message</p>
+                        <a href="">+1 800 123 1234</a>
+                        <a class="mail" href="">email@website.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="left">
+                    <p>&copy; Copyright 2019. All Right Reserved</p>
+                </div>
+                <div class="right">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+
+
 </body>
+
+</html>
