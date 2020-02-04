@@ -125,10 +125,10 @@ html {
 }
 
 .comp1-txt {
-        display: flex;
+        /* display: flex; */
         flex-direction: column;
         padding-left: 50px;
-        width: 1150px;
+        width: 80%;
         font-family: Montserrat;
         margin-top: 150px;
         flex-direction: column;

@@ -1,14 +1,12 @@
-window.onload = ()=>{
-  $(document).ready(function(){
-    $(window).scroll(function(){
-      var scroll = $(window).scrollTop();
-      if (scroll > 300) {
-        $(".black").css("background" , "blue");
-      }
-  
-      else{
-        $(".black").css("background" , "#333");  	
-      }
-    })
-  })
-}
+
+$(window).on('scroll', function () {
+    if ($(this).scrollTop() > 200) {
+        if (!$('.navbar').hasClass('expand')) {
+            $('.navbar').addClass('expand');
+        }
+    } else {
+        if ($('.navbar').hasClass('expand')) {
+            $('.navbar').removeClass('expand');
+        }
+    }
+});

@@ -19,13 +19,19 @@ body {
 }
 
 .navbar {
-    position: fixed;
-    background-color: #515056;
+    background-color: #48474D;
     text-align: right;
     height: 70px;
     width: 100%;
     line-height: 70px;
     z-index: 1;
+    top: 0;
+    position: fixed;
+    transition: top 0.5s;
+}
+
+.navbar.expand {
+    top: 100px;
 }
 
 .navbar img {
@@ -53,7 +59,7 @@ body {
 .navtext {
     color: white;
     font-family: 'Raleway', sans-serif;
-    font-weight: ;
+    /* font-weight: ; */
     margin: 0px 15px;
     font-size: 15px;
     margin-left: auto;
@@ -65,6 +71,57 @@ body {
 
 .navtext:hover {
     color: #CFB67E;
+}
+
+#scrolToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    box-shadow: 0px 0px 15px 0px #00000052;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .8s ease-out;
+    z-index: 100;
+    animation: scrolToTopEffect 1s linear infinite;
+}
+
+#scrolToTopBtn:hover {
+    background-color: #c9c9c9;
+}
+
+@keyframes scrolToTopEffect {
+    0% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(-3px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    75% {
+        transform: translateY(3px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+#scrolToTopBtn img {
+    transform: rotate(-90deg);
+}
+
+#scrolToTopBtn:focus {
+    outline: none;
 }
 
 label {
@@ -371,6 +428,7 @@ label {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
 }
+
 .tte {
     font-size: 40px;
     text-align: center;
@@ -378,8 +436,9 @@ label {
     font-weight: 600;
     margin-top: 15px;
 }
+
 .price {
-    margin-left: 20px ;
+    margin-left: 20px;
 }
 
 .imageees {
@@ -441,79 +500,96 @@ section#promo .content .promo-content {
     display: flex;
     text-decoration: none;
 }
+
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
-    /* font-family: 'Open Sans', sans-serif; */
-    /* font-family: 'Raleway', sans-serif; */
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Raleway', sans-serif; */
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     user-select: none;
     font-family: 'Raleway', sans-serif;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     background-color: #fff;
     font-family: 'Raleway', sans-serif;
 }
-nav, footer, section{
+
+nav,
+footer,
+section {
     display: block;
 }
-.container{
+
+.container {
     width: 100%;
     padding: 0 50px;
     display: flex;
 }
-footer .container .content{
+
+footer .container .content {
     display: flex;
     flex-direction: row;
     padding: 50px 0;
 }
-footer .about{
+
+footer .about {
     width: 30%;
     left: 0px;
     position: relative;
 }
-footer .about p{
+
+footer .about p {
     font-size: 14px;
 }
-footer .about img{
+
+footer .about img {
     height: 50px;
     margin-bottom: 10px;
 }
-footer .quick-links{
+
+footer .quick-links {
     width: 15%;
     margin: 0 15%;
 }
-footer .contact{
+
+footer .contact {
     width: 20%;
     right: 0px;
     position: relative;
 }
-footer .container .content p{
+
+footer .container .content p {
     color: #4d4d4d;
     font-family: 'Raleway', sans-serif;
 }
-footer .container .content h3{
+
+footer .container .content h3 {
     color: #688095;
     font-family: 'Raleway', sans-serif;
 }
-footer .container .content h3{
+
+footer .container .content h3 {
     color: #688095;
     font-family: 'Raleway', sans-serif;
 }
-footer .container .content .quick-links a{
+
+footer .container .content .quick-links a {
     color: #4d4d4d;
     display: block;
     text-align: left;
     font-family: 'Raleway', sans-serif;
     margin-top: 10px;
 }
-footer .container .content .contact a{
+
+footer .container .content .contact a {
     color: #2C4458;
     display: inline-block;
     text-align: left;
@@ -523,13 +599,16 @@ footer .container .content .contact a{
     font-weight: 600;
     font-size: 13px;
 }
-footer .container .content .contact a.mail{
+
+footer .container .content .contact a.mail {
     margin-left: 10px;
 }
-footer .container .content .contact p{
+
+footer .container .content .contact p {
     margin-top: 10px;
 }
-footer .copyright{
+
+footer .copyright {
     display: flex;
     width: 100%;
     background-color: #688095;
@@ -540,75 +619,92 @@ footer .copyright{
     color: #fff;
     font-size: 12px;
 }
-footer .copyright .left{
+
+footer .copyright .left {
     left: 50px;
     position: absolute;
     color: #fff;
 }
-footer .copyright .right{
+
+footer .copyright .right {
     right: 50px;
     position: absolute;
 }
-footer .copyright .right a{
+
+footer .copyright .right a {
     color: #fff;
     margin-left: 20px;
     text-decoration: none;
 }
 
 @media (max-width: 800px) {
-    .container{
+    .container {
         padding: 0 30px;
     }
-    footer .quick-links{
+
+    footer .quick-links {
         width: 80%;
     }
-    footer .contact{
-        width: 80%;
-        position: relative;
-    }
-    footer .about{
+
+    footer .contact {
         width: 80%;
         position: relative;
     }
-    footer .container .content{
+
+    footer .about {
+        width: 80%;
+        position: relative;
+    }
+
+    footer .container .content {
         display: block;
         text-align: center;
     }
-    footer .container .content div{
+
+    footer .container .content div {
         margin: auto;
 
     }
-    footer .container .content .quick-links{
+
+    footer .container .content .quick-links {
         display: none;
     }
-    footer .container .content .contact{
+
+    footer .container .content .contact {
         margin-top: 30px;
     }
-    footer .copyright{
+
+    footer .copyright {
         font-size: 10px;
         line-height: 25px;
     }
-    footer .copyright .left{
+
+    footer .copyright .left {
         left: 30px;
     }
-    footer .copyright .right{
-        right:  30px;
+
+    footer .copyright .right {
+        right: 30px;
     }
-    footer .copyright .right a{
+
+    footer .copyright .right a {
         display: block;
         font-size: 10px;
         line-height: 12px;
     }
-    
+
 }
+
 @media (max-width: 450px) {
-    .container{
+    .container {
         padding: 0 15px;
     }
-    footer .copyright .left{
+
+    footer .copyright .left {
         left: 15px;
     }
-    footer .copyright .left{
+
+    footer .copyright .left {
         right: 15px;
     }
 }
@@ -988,7 +1084,8 @@ section#contact .content a:hover {
         padding-right: 78px;
         flex-direction: row;
     }
-/* 
+
+    /* 
     #pflsh {
         color: black;
         font-family: 'Raleway';
@@ -1044,7 +1141,7 @@ section#contact .content a:hover {
         margin-top: 10%;
         box-shadow: 0px 10px 45px -6px rgba(0, 0, 0, 0.28);
     }
-    
+
     .imageees {
         width: 70%;
         margin-left: 150px;

@@ -20,12 +20,13 @@ body {
 
 .navbar {
     position: fixed;
-    background-color: #515056;
+    background-color: #48474D;
     text-align: right;
     height: 70px;
     width: 100%;
     line-height: 70px;
     z-index: 1;
+    top: 0;
 }
 
 .navbar img {
@@ -53,7 +54,7 @@ body {
 .navtext {
     color: white;
     font-family: 'Raleway', sans-serif;
-    font-weight: ;
+    /* font-weight: ; */
     margin: 0px 15px;
     font-size: 15px;
     margin-left: auto;
@@ -325,11 +326,13 @@ label {
     background-color: #9DBBC9;
     opacity: 95%;
     position: absolute;
-    width: 30%;
+    width: 50%;
     height: 50%;
     text-align: center;
     align-content: center;
-    margin-left: 121px;
+    /* margin-bottom: 1500px; */
+    margin-left: 380px;
+
 }
 
 
@@ -385,7 +388,7 @@ label {
     font-size: 23px;
     letter-spacing: 0.08em;
     border-right: 1px dashed black;
-    display: inline-block;
+    /* display: inline-block; */
 
 }
 
@@ -412,6 +415,7 @@ td {
     align-items: center;
     text-align: center;
     padding: 50px;
+    margin-top: 200px;
 }
 
 .text {
@@ -432,7 +436,9 @@ h {
     display: flex;
     justify-content: center;
     flex: auto;
-    margin-left: 170px;
+    margin-left: 700px;
+    margin-top: -200px; 
+    width: 40%;
 }
   
 .column {
@@ -460,6 +466,8 @@ section#contact{
     background-position: center;
     background-size: cover;
     padding: 40px 0;
+    display: none;
+
 }
 section#contact .content{
     width: 70%;
@@ -518,6 +526,7 @@ section#contact .content a:hover{
     box-sizing: border-box;
     user-select: none;
     font-family: 'Raleway', sans-serif;
+    /* width: 100%; */
 }
 
 body {
@@ -559,6 +568,7 @@ footer .about p {
 footer .about img {
     height: 50px;
     margin-bottom: 10px;
+    width: 50%;
 }
 
 footer .quick-links {
@@ -866,10 +876,10 @@ footer .copyright .right a {
     .box2 {
         background-color: #9DBBC9;
         opacity: 95%;
-        position: relative;
-        margin-top: 115px;
-        margin-left: 80px;
-        width: 30%;
+        position: absolute;
+        margin-top: 250px;
+        margin-left: 350px;
+        width: 50%;
         height: 50%;
         text-align: center;
         align-content: center;
@@ -877,7 +887,7 @@ footer .copyright .right a {
         flex: none;
         box-sizing: border-box;
         padding: 0 20px;
-        padding-bottom: 50px;
+        padding-bottom: 340px;
     }
 
     .cont3 {
@@ -885,7 +895,7 @@ footer .copyright .right a {
         position: relative;
         width: 100%;
         padding: 50px;
-        /* margin-top: 50px; */
+        margin-top: 430px; 
     }
 
     .Part3 {
@@ -896,6 +906,8 @@ footer .copyright .right a {
     .piclogo {
         display: column;
         display: flex;
+        margin-left: 200px;
+        margin-top: 150px;
     }
     .column {
         float: left;
