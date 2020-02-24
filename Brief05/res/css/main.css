@@ -1,0 +1,243 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+body {
+  margin: 0%;
+  padding: 0%;
+  /* width: 100%;
+    height: 100%; */
+}
+
+.sidenav {
+  position: fixed;
+  overflow-x: hidden;
+  height: 100%;
+  width: 0;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: whitesmoke;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 60px;
+  font-family: 'Modern No. 20', sans-serif;
+  border: black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 50px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #EAA85A;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.button1 {
+  font-family: 'Modern No. 20', sans-serif;
+  color: black;
+  letter-spacing: 2px;
+  font-size: 25px;
+  font-weight: 250;
+  margin-top: 50px;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 99px;
+  -webkit-box-shadow: 0px 0px 1px black;
+          box-shadow: 0px 0px 1px black;
+  cursor: pointer;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button2 {
+  font-family: 'Modern No. 20', sans-serif;
+  color: black;
+  letter-spacing: 2px;
+  font-size: 17px;
+  font-weight: 250;
+  margin-top: 50px;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 99px;
+  -webkit-box-shadow: 0px 0px 1px black;
+          box-shadow: 0px 0px 1px black;
+  cursor: pointer;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+  width: 50%;
+  height: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 17%;
+}
+
+.button1:hover {
+  background-color: #EAA85A;
+  color: white;
+}
+
+.open {
+  font-size: 50px;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.Header {
+  background-color: #EAA85A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  margin-top: -20px;
+}
+
+.headtit {
+  font-family: 'Modern No. 20', sans-serif;
+  font-size: 111px;
+  margin-top: 150px;
+}
+
+.image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+}
+
+.main-slider {
+  width: 25%;
+  height: 70vh;
+  margin: 0 auto;
+  position: relative;
+  color: white;
+  font-size: 2em;
+  margin-top: -10%;
+}
+
+.main-slider img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.main-slider .img-info {
+  width: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-slider .nav-icon {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  z-index: 4;
+}
+
+.main-slider .nav-icon i {
+  cursor: pointer;
+}
+
+.main-slider .rounded-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: -102%;
+  width: 100%;
+  height: 100%;
+}
+
+.main-slider .rounded-buttons div {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rebeccapurple;
+  border: 1px solid #eee;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.main-slider .rounded-buttons div.active {
+  background-color: orangered;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+  .main-slider {
+    width: 50%;
+    height: 50vh;
+    margin: 0 auto;
+    position: relative;
+    color: black;
+    font-size: 2em;
+    margin-top: -10%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
