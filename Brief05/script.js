@@ -17,82 +17,153 @@ setInterval(() => {
     i++;
   else
     i = 0;
-  console.log(i);
 }, 2000);
 
 
 
+// Get the modal
+var modal = document.getElementById("myModal");
 
-function validate_email(field, alerttxt) {
-  with(field) {
-    apos = value.indexOf("@");
-    dotpos = value.lastIndexOf(".");
-    if (apos < 1 || dotpos - apos < 2) {
-      alert(alerttxt);
-      return false;
-    } else {
-      return true;
-    }
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+function reserve() {
+  modal.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
   }
 }
 
-function validatePassword(fld) {
-  var error = "";
-  var illegalChars = /[\W_]/; // allow only letters and numbers
 
-  if (fld.value == "") {
-    fld.style.background = 'Yellow';
-    error = "You didn't enter a password.\n";
-    alert(error);
-    return false;
 
-  } else if ((fld.value.length < 7) || (fld.value.length > 15)) {
-    error = "The password is the wrong length. \n";
-    fld.style.background = 'Yellow';
-    alert(error);
-    return false;
+var btnValider = document.getElementsByClassName("close")[0];
+var modal = document.getElementById("validation");
 
-  } else if (illegalChars.test(fld.value)) {
-    error = "The password contains illegal characters.\n";
-    fld.style.background = 'Yellow';
-    alert(error);
-    return false;
+var destination = document.getElementById('destination');
+var nom = document.getElementById('nom');
+var age = document.getElementById('age');
+var periode = document.getElementById('date');
+var nbr = document.getElementById('nbr');
+var budget = document.getElementById('pets');
+var cpt = 0;
 
-  } else if ((fld.value.search(/[a-zA-Z]+/) == -1) || (fld.value.search(/[0-9]+/) == -1)) {
-    error = "The password must contain at least one numeral.\n";
-    fld.style.background = 'Yellow';
-    alert(error);
-    return false;
-
-  } else {
-    fld.style.background = 'White';
+function Validate() {
+  cpt = 0;
+  if (destination.value == "") document.getElementById('1').innerHTML = "enter your destination ";
+  else {
+    document.getElementById('1').innerHTML = " ";
+    cpt++;
   }
-  return true;
+  if (nom.value == "") document.getElementById('2').innerHTML = "enter your name";
+  else {
+    document.getElementById('2').innerHTML = " ";
+    cpt++;
+  }
+  if (age.value == "") document.getElementById('3').innerHTML = "enter your birthday";
+  else { 
+    document.getElementById('3').innerHTML = " ";
+    cpt++;
+  }
+  if (datedebut.value == "") document.getElementById('4').innerHTML = "enter a valid date";
+  else {
+    document.getElementById('4').innerHTML = " ";
+    cpt++;
+  }
+  if (datefin.value == "") document.getElementById('5').innerHTML = "enter a valid date";
+  else if (datefin.value < Date.now) document.getElementById('5').innerHTML = "Date fin doit être supérieure de date début";
+  else {
+    document.getElementById('5').innerHTML = " ";
+    cpt++;
+  }
+  if (nbr.value == "") document.getElementById('6').innerHTML = "enter the number of people";
+  else if (nbr.value <= 5) document.getElementById('5').innerHTML = "max is 5";
+  else {
+    document.getElementById('6').innerHTML = " ";
+    cpt++;
+  }
+  if (pet.value == "") document.getElementById('7').innerHTML = "please answer";
+  else {
+    document.getElementById('7').innerHTML = " ";
+    cpt++;
+  }
+  console.log(cpt);
+  return cpt;
+}
+
+function getAge(date) {
+  var diff = Date.now() - date.getTime();
+  var age = new Date(diff);
+  return Math.abs(age.getUTCFullYear() - 1970);
+}
+
+function diffdate(d1, d2) {
+  var WNbJours = d2.getTime() - d1.getTime();
+  return Math.ceil(WNbJours / (1000 * 60 * 60 * 24));
+}
+
+function check() {
+  if (cpt == 7) {
+    document.getElementById("validation").style.display = "block";
+    document.getElementById('champ1').innerHTML += destination.value;
+    document.getElementById('champ2').innerHTML += nom.value;
+    document.getElementById('champ3').innerHTML += getAge(new Date(date.value));
+    document.getElementById('champ4').innerHTML += diffdate(new Date(datedebut.value), new Date(datefin.value)) + " jours";
+    document.getElementById('champ5').innerHTML += nbr.value;
+    document.getElementById('champ6').innerHTML += budget.value + " DH";
+    destination.value = "";
+    nom.value = "";
+    date.value = "";
+    datedebut.value = "";
+    datefin.value = "";
+    nbr.value = "";
+    budget.value = "";
+  }
 }
 
 
-function IsEmpty(objectfield,stringfield)
-{
-    objectvalue = objectfield.value.length;
-    if(objectvalue=="")
-    {
-        alert("Oops.. Please fill out the value of "+stringfield);
-        objectfield.style.background = 'Yellow';
-        return false;
-    }
-    else
-        return true;
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+  btnValider.onclick = function () {
+    modal.style.display = "none";
+    alert('Votre demande est effectuée !');
+    document.getElementById('champ1').innerHTML = "your appartement : ";
+    document.getElementById('champ2').innerHTML = "your name is : ";
+    document.getElementById('champ3').innerHTML = "your age : ";
+    document.getElementById('champ4').innerHTML = "the date : ";
+    document.getElementById('champ5').innerHTML = "people number : ";
+    document.getElementById('champ6').innerHTML = "pets : ";
+  }
 }
 
 
-$(window).load(function () {
-  $(".trigger_popup_fricc").click(function(){
-     $('.hover_bkgr_fricc').show();
-  });
-  $('.hover_bkgr_fricc').click(function(){
-      $('.hover_bkgr_fricc').hide();
-  });
-  $('.popupCloseButton').click(function(){
-      $('.hover_bkgr_fricc').hide();
-  });
-});
+var modal = document.getElementById("myModalsig");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("closeme")[0];
+
+// When the user clicks on the button, open the modal
+function signup() {
+  modal.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}

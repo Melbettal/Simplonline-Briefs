@@ -2,8 +2,6 @@
 body {
   margin: 0%;
   padding: 0%;
-  /* width: 100%;
-    height: 100%; */
   overflow-x: hidden;
 }
 
@@ -964,64 +962,6 @@ section#Rent .content .promo-content {
   margin-top: -15px;
 }
 
-/* Popup box BEGIN */
-/* .hover_bkgr_fricc{
-    background:rgba(0,0,0,.4);
-    cursor:pointer;
-    display:none;
-    height:100%;
-    position:fixed;
-    text-align:center;
-    top:0;
-    width:100%;
-    z-index:10000;
-}
-.hover_bkgr_fricc .helper{
-    display:inline-block;
-    height:100%;
-    vertical-align:middle;
-}
-.hover_bkgr_fricc > div {
-    background-color: #fff;
-    box-shadow: 10px 10px 60px #555;
-    display: inline-block;
-    height: auto;
-    max-width: 551px;
-    min-height: 100px;
-    vertical-align: middle;
-    width: 60%;
-    position: relative;
-    border-radius: 8px;
-    padding: 15px 5%;
-}
-.popupCloseButton {
-    background-color: #fff;
-    border: 3px solid #999;
-    border-radius: 50px;
-    cursor: pointer;
-    display: inline-block;
-    font-family: arial;
-    font-weight: bold;
-    position: absolute;
-    top: -20px;
-    right: -20px;
-    font-size: 25px;
-    line-height: 30px;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-}
-.popupCloseButton:hover {
-    background-color: #ccc;
-}
-.trigger_popup_fricc {
-    cursor: pointer;
-    font-size: 20px;
-    margin: 20px;
-    display: inline-block;
-    font-weight: bold;
-}*/
-/* Popup box BEGIN */
 .box {
   width: 40%;
   margin: 0 auto;
@@ -1103,6 +1043,129 @@ section#Rent .content .promo-content {
 .popup .content {
   max-height: 30%;
   overflow: auto;
+}
+
+#Rentme {
+  font-family: 'Modern No. 20', sans-serif;
+  letter-spacing: 2px;
+  border-radius: 99px;
+  cursor: pointer;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -51px;
+  width: 30%;
+  height: 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  background-color: #EAA85A;
+  color: white;
+  font-size: 15px;
+}
+
+#Rentme:hover {
+  color: black;
+}
+
+.modalsig {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-contentsig {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  min-height: 55%;
+}
+
+.closeme {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeme:hover,
+.closeme:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 80%;
+  padding: 20px;
+}
+
+.f1 {
+  font-family: 'Modern No. 20', sans-serif;
+  font-size: 111px;
+  margin-top: 150px;
+  font-size: 30px;
+}
+
+.form {
+  margin-top: -143px;
+}
+
+.button5 {
+  font-family: 'Modern No. 20', sans-serif;
+  letter-spacing: 2px;
+  border-radius: 99px;
+  cursor: pointer;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  font-size: 23px;
+  float: right;
+  width: 97px;
+  height: 51px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button5:hover {
+  background-color: #EAA85A;
+  color: white;
+}
+
+#validation {
+  display: none;
+}
+
+span {
+  color: red;
+  font-size: 10px;
 }
 
 @media screen and (max-width: 700px) {
@@ -1320,6 +1383,14 @@ section#Rent .content .promo-content {
     background-color: #00C6D9;
     margin-top: -277px;
     height: 639px;
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 66%;
+    min-height: 32%;
   }
 }
 /*# sourceMappingURL=main.css.map */

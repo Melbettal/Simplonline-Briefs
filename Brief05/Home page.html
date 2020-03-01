@@ -19,10 +19,10 @@
   </div>
 
   <div id="Header">
-    <span class="open" onclick="openNav()">&#9776;</span>
+    <div class="open" onclick="openNav()">&#9776;</div>
     <div class="headtit">Renting Done </br>
       Right. Finally.
-      <div class="button4" href="#Rent">Rent your Luxury appartement Now!</div>
+      <div class="button4">Rent your Luxury appartement Now!</div>
     </div>
     <div class="navbar">
       <img src="./res/img/Logo.png" alt="logo">
@@ -39,13 +39,64 @@
         <p>Password</p>
         <input type="password" name="" placeholder="Enter your Password" class="ids" id="pass">
         <i id="pShow"></i>
-        <input type="submit" name="" value="Sign In" class="login" onclick="Formulaire()"><br><br>
-        <input type="submit" name="" value="Sign Up" class="signup" onclick="Formulaire()"><br><br>
+        <input type="submit" name="" value="Sign In" class="login"><br><br>
+        <input type="submit" name="" value="Sign Up" class="signup" onclick="signup()"><br><br>
         <div class="forgot">
           <a href="#"> Forgot your password? </a><br>
-          <a href="sign-up.html"> You don't have an account? </a>
+          <a href="#myModalsig"> You don't have an account? </a>
         </div>
       </form>
+    </div>
+  </div>
+
+
+  <!-- The Modal -->
+  <div id="myModalsig" class="modalsig">
+
+    <!-- Modal content -->
+    <div class="modal-contentsig">
+      <span class="closeme">&times;</span>
+      <div class="form" method="post">
+        <fieldset class="f1">
+          <h2 style="text-align: center;"> Sign-up ! </h2>
+          <table>
+            <tr>
+              <td> <label for="fnom"> first name : </label></td>
+              <td> <input type="text" style="text-transform: uppercase" id="fnom"> </td>
+              <td><span id="1"></span> </td>
+            </tr>
+            <tr>
+              <td> <label for="lnom"> last name : </label></td>
+              <td> <input type="text" style="text-transform: uppercase" id="lnom"> </td>
+              <td><span id="2"></span> </td>
+            </tr>
+
+            <tr>
+              <td><label for="email"> E-mail : </label> </td>
+              <td><input type="text" id="email"></td>
+              <td> <span id="3"></span></td>
+            </tr>
+
+            <tr>
+              <td><label for="phone"> Phone number : </label> </td>
+              <td><input type="text" id="phone"></td>
+              <td> <span id="4"></span> </td>
+            </tr>
+
+            <tr>
+              <td><label for="pwrd"> Password : </label> </td>
+              <td><input type="text" id="pwrd"></td>
+              <td> <span id="5"></span> </td>
+            </tr>
+
+            <tr>
+              <td><label for="confirm"> Confirm : </label></td>
+              <td><input type="text" id="confirm"><br>
+              <td> <span id="6"></span> </td>
+          </table>
+          <input type="button" class="button5" value="Rent" onclick="Validatesig()">
+        </fieldset>
+      </div>
     </div>
   </div>
 
@@ -140,6 +191,7 @@
               <div class="pp4">The Ritz Plaza, 235 West 48th Street, New York, NY 10036, USA</div>
             </div>
           </div>
+          <button onclick="reserve()" id="Rentme">Rent me!</button>
         </div>
 
         <div class="card-promo">
@@ -154,6 +206,7 @@
               <div class="pp4">242 Mulberry St, New York, NY 10012, USA</div>
             </div>
           </div>
+          <button onclick="reserve()" id="Rentme">Rent me!</button>
         </div>
 
         <div class="card-promo">
@@ -168,6 +221,7 @@
               <div class="pp4">19 Dutch Street, New York, NY 10038, USA</div>
             </div>
           </div>
+          <button onclick="reserve()" id="Rentme">Rent me!</button>
         </div>
 
         <div class="card-promo">
@@ -182,6 +236,7 @@
               <div class="pp4">222 East 44th Street, New York, NY 10017, USA</div>
             </div>
           </div>
+          <button onclick="reserve()" id="Rentme">Rent me!</button>
         </div>
 
         <div class="card-promo">
@@ -196,6 +251,7 @@
               <div class="pp4">Starting from 1430 $</div>
             </div>
           </div>
+          <button onclick="reserve()" id="Rentme">Rent me!</button>
         </div>
 
         <div class="card-promo">
@@ -210,6 +266,7 @@
               <div class="pp4">Starting from 1910 $</div>
             </div>
           </div>
+          <button onclick="reserve()" id="Rentme">Rent me!</button>
         </div>
 
         <div class="card-promo">
@@ -224,6 +281,7 @@
               <div class="pp4">23 South 1st Street, New York, NY 11249, USA</div>
             </div>
           </div>
+          <button onclick="reserve()" id="Rentme">Rent me!</button>
         </div>
 
         <div class="card-promo">
@@ -238,6 +296,7 @@
               <div class="pp4">50 Prince St, New York, NY 10012, USA</div>
             </div>
           </div>
+          <button onclick="reserve()" id="Rentme">Rent me!</button>
         </div>
 
         <div class="card-promo">
@@ -248,26 +307,17 @@
             <div class="contry">
               <div class="hh4">Brésil – Rio De Janeiro</div>
             </div>
-
             <div class="price">
               <div class="pp4">45 Clifton Pl, Jersey City, NJ 07304, USA
                 Unit 3D</div>
             </div>
           </div>
+          <button onclick="reserve()" id="Rentme">Rent me!</button>
         </div>
       </div>
     </div>
   </section>
-  
-  <div id="popup1" class="overlay">
-    <div class="popup">
-      <h2>Here i am</h2>
-      <a class="close" href="#">&times;</a>
-      <div class="content">
-        Thanks to pop me out of that button, but now i'm done so you can close this window.
-      </div>
-    </div>
-  </div>
+
 
   <!-- this is the footer -->
   <footer>
@@ -309,7 +359,247 @@
     </div>
   </footer>
   </div>
+
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="form" method="post">
+        <fieldset class="f1">
+          <h2 style="text-align: center;"> Rent this appartement </h2>
+          <table>
+            <tr>
+              <td> <label for="fnom"> first name : </label></td>
+              <td> <input type="text" style="text-transform: uppercase" id="fnom"> </td>
+              <td><span id="1"></span> </td>
+            </tr>
+            <tr>
+              <td> <label for="lnom"> last name : </label></td>
+              <td> <input type="text" style="text-transform: uppercase" id="lnom"> </td>
+              <td><span id="2"></span> </td>
+            </tr>
+
+            <tr>
+              <td><label for="date"> Birthday : </label> </td>
+              <td><input type="date" id="date"></td>
+              <td> <span id="3"></span></td>
+            </tr>
+
+            <tr>
+              <td><label for="datedebut"> Suggest a renting day: </label> </td>
+              <td><input type="date" id="datedebut"></td>
+              <td> <span id="4"></span> </td>
+            </tr>
+
+            <tr>
+              <td><label for="quantity"> Number of people : </label> </td>
+              <td><input type="number" id="quantity" name="quantity" min="1" max="5"></td>
+              <td> <span id="6"></span> </td>
+            </tr>
+
+            <tr>
+              <td><label for="nbr"> Do you have any pets? : </label></td>
+              <td>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male" style="font-size: 15px;">Yes</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female" style="font-size: 15px;">No</label><br>
+          </table>
+          <input type="button" class="button5" value="Rent" onclick="Validate()">
+        </fieldset>
+      </div>
+    </div>
+  </div>
+
+  <form method="post" id="validation">
+    <fieldset>
+      <h2> validation:</h2>
+      <div id="champ1"> Your appartement : </div>
+      <div id="champ2"> Your name is : </div>
+      <div id="champ3"> Your age : </div>
+      <div id="champ4"> the date : </div>
+      <div id="champ5"> People : </div>
+      <div id="champ6"> pets: </div>
+
+      <input type="button" value="Valider" class="btn cloose">
+    </fieldset>
+  </form>
+
   <script src="./script.js"></script>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("Rentme");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    var btnValider = document.getElementsByClassName("btn cloose")[0];
+    var modals = document.getElementById("validation");
+
+    var fnom = document.getElementById('fnom');
+    var lnom = document.getElementById('lnom');
+    var date = document.getElementById('date');
+    var datedebut = document.getElementById('datedebut');
+    var quantity = document.getElementById('quantity');
+    var cpt = 0;
+
+    function Validate() {
+      cpt = 0;
+      if (fnom.value == "") document.getElementById('1').innerHTML = "enter your first name ";
+      else {
+        document.getElementById('1').innerHTML = " ";
+        cpt++;
+      }
+      if (lnom.value == "") document.getElementById('2').innerHTML = "enter your last name";
+      else {
+        document.getElementById('2').innerHTML = " ";
+        cpt++;
+      }
+      if (date.value == "") document.getElementById('3').innerHTML = "enter your birthday";
+      else {
+        document.getElementById('3').innerHTML = " ";
+        cpt++;
+      }
+      if (datedebut.value == "") document.getElementById('4').innerHTML = "enter a valid date";
+      else {
+        document.getElementById('4').innerHTML = " ";
+        cpt++;
+      }
+      if (quantity.value == "") document.getElementById('6').innerHTML = "enter the number of people";
+      else {
+        document.getElementById('6').innerHTML = " ";
+        cpt++;
+      }
+      console.log(cpt);
+      return cpt;
+    }
+    function Validatesig() {
+      var rgxEmail = /^[A-Za-z0-9-_.]+@[A-Za-z]{4,9}.[A-Za-z]{2,3}$/;
+      var rgx = /^[0][5-7-6][0-9]{8}$/;
+      if (fnom.value == "") document.getElementById('1').innerHTML = "enter your first name ";
+      else {
+        document.getElementById('1').innerHTML = " ";
+      }
+      if (lnom.value == "") document.getElementById('2').innerHTML = "enter your last name";
+      else {
+        document.getElementById('2').innerHTML = " ";
+      }
+      if (email.value == "") document.getElementById('3').innerHTML = "enter a valid email";
+      else if (!rgxEmail.test(email.value)) document.getElementById('3').innerHTML = "Format incorrect";
+      else {
+        document.getElementById('3').innerHTML = " ";
+      }
+      if (phone.value == "") document.getElementById('4').innerHTML = "enter a valid number";
+      else if (!rgx.test(phone.value)) document.getElementById('4').innerHTML = "tel incorrect";
+      else {
+        document.getElementById('4').innerHTML = " ";
+      }
+      if (pwrd.value == "") document.getElementById('5').innerHTML = "enter a password";
+      else {
+        document.getElementById('5').innerHTML = " ";
+        cpt++;
+      }
+      if (confirm.value == "") document.getElementById('6').innerHTML = "re enter your password";
+      else {
+        document.getElementById('6').innerHTML = " ";
+        cpt++;
+      }
+      console.log(cpt);
+      return cpt;
+    }
+
+    function getAge(date) {
+      var diff = Date.now() - date.getTime();
+      var age = new Date(diff);
+      return Math.abs(age.getUTCFullYear() - 1970);
+    }
+
+    function diffdate(d1, d2) {
+      var WNbJours = d2.getTime() - d1.getTime();
+      return Math.ceil(WNbJours / (1000 * 60 * 60 * 24));
+    }
+
+    function check() {
+      if (cpt == 7) {
+        document.getElementById("validation").style.display = "block";
+        document.getElementById('champ1').innerHTML += destination.value;
+        document.getElementById('champ2').innerHTML += nom.value;
+        document.getElementById('champ3').innerHTML += getAge(new Date(date.value));
+        document.getElementById('champ4').innerHTML += diffdate(new Date(datedebut.value), new Date(datefin.value)) + " jours";
+        document.getElementById('champ5').innerHTML += nbr.value;
+        document.getElementById('champ6').innerHTML += budget.value + " DH";
+        destination.value = "";
+        nom.value = "";
+        date.value = "";
+        datedebut.value = "";
+        datefin.value = "";
+        nbr.value = "";
+        budget.value = "";
+      }
+    }
+
+
+    window.onclick = function (event) {
+      if (event.target == modals) {
+        modals.style.display = "none";
+      }
+      btnValider.onclick = function () {
+        modals.style.display = "none";
+        alert('Votre demande est effectuée !');
+        document.getElementById('champ1').innerHTML = "your appartement : ";
+        document.getElementById('champ2').innerHTML = "your name is : ";
+        document.getElementById('champ3').innerHTML = "your age : ";
+        document.getElementById('champ4').innerHTML = "the date : ";
+        document.getElementById('champ5').innerHTML = "people number : ";
+        document.getElementById('champ6').innerHTML = "pets : ";
+      }
+    }
+    var modal = document.getElementById("myModalsig");
+
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("closeme")[0];
+
+    // When the user clicks on the button, open the modal
+    function signup() {
+      modal.style.display = "block";
+    }
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+  </script>
 </body>
 
 </html>
