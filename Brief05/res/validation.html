@@ -106,30 +106,8 @@
       of real estate.
       <div class="button3">Learn more about us</div>
     </div>
-    <!-- <div class="img" id="bgImage"></div> -->
-    <div class="slideshow-container">
-
-      <div class="mySlides fade">
-        <img src="./res/img/3.jpg" style="width:100%">
-      </div>
-      
-      <div class="mySlides fade">
-        <img src="./res/img/4.jpg" style="width:90%">
-      </div>
-      
-      <div class="mySlides fade">
-        <img src="./res/img/5.jpg" style="width:90%">
-      </div>
-
-      <div class="mySlides fade">
-        <img src="./res/img/6.jpg" style="width:90%">
-      </div>
-      
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      
-      </div>
-      <br>
+    <div class="img" id="bgImage">
+    </div>
   </div>
 
   <!-- this is the gallery -->
@@ -437,15 +415,16 @@
   </div>
 
   <form method="post" id="validation">
-    <fieldset id="f1">
+    <fieldset>
       <h2> validation:</h2>
       <div id="champ1"> Your appartement : </div>
       <div id="champ2"> Your name is : </div>
       <div id="champ3"> Your age : </div>
       <div id="champ4"> the date : </div>
       <div id="champ5"> People : </div>
+      <div id="champ6"> pets: </div>
 
-      <input type="button" id="button6" value="submit" class="close">
+      <input type="button" id="button5" href="./validation.html" value="Valider" class="close">
     </fieldset>
   </form>
 
@@ -470,8 +449,6 @@
 
     var btnValider = document.getElementsByClassName("close")[0];
     var modals = document.getElementById("validation");
-
-
 
     var fnom = document.getElementById('fnom');
     var lnom = document.getElementById('lnom');
@@ -559,7 +536,6 @@
 
     function check() {
       if (cpt == 5) {
-        document.getElementById("myModal").style.display = "none";
         document.getElementById("validation").style.display = "block";
         document.getElementById('champ1').innerHTML += fnom.value;
         document.getElementById('champ2').innerHTML += lnom.value;
@@ -595,11 +571,6 @@
     var modal = document.getElementById("myModal");
     var btn = document.getElementById("Rentme");
     var span = document.getElementsByClassName("close")[0];
-    var btnFermer = document.getElementById("button6");
-
-    btnFermer.onclick = function () {
-      f1.style.display = "none";
-    }
 
     btn.onclick = function () {
       modal.style.display = "block";
