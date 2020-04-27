@@ -1,9 +1,13 @@
 /*==============================================================*/
 /* Nom de SGBD :  MySQL 5.0                                     */
-/* Date de création :  27/04/2020 13:13:24                      */
+/* Date de création :  26/04/2020 13:13:24                      */
 /*==============================================================*/
 
+create database dbshopping;
+use dbshopping;
 
+
+/*création des tables de la base de données*/
 drop table if exists Administrator;
 
 drop table if exists Customer;
@@ -157,6 +161,17 @@ alter table "Order" add constraint FK_Association_4 foreign key (orderId, produc
 
 alter table Shipping_Cart add constraint FK_Association_1 foreign key (userId, password, loginStatus, registerDate, customerName, address, email, creditCardinfo, shippinginfo, accountBalance)
       references Customer (userId, password, loginStatus, registerDate, customerName, address, email, creditCardinfo, shippinginfo, accountBalance) on delete restrict on update restrict;
+
+
+
+/*=========================================================================================*/
+/* Création d'un utilisateur avec un accès d’ajouter de nouvelles entrées dans les tableaux*/
+/*=========================================================================================*/
+
+create user 'non-root'@'localhost';
+alter user 'non-root'@'localhost' IDENTIFIED BY 'myhost';
+grant insert on dbshopping.* to 'non-root'@'localhost';
+
 
 
 
