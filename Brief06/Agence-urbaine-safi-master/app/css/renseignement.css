@@ -1,0 +1,266 @@
+body {
+    overflow-x: hidden;
+}
+
+/*  */
+#body {
+    height: 100%;
+    /*  */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    /*  */
+    position: relative;
+    padding-bottom: 76px;
+}
+
+/*  */
+#b-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#b-header h1 {
+    font-size: 50px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#b-header span {
+    font-size: 20px;
+    text-align: center;
+}
+
+#btn-ask {
+    margin: 20px 0;
+    background: no-repeat;
+    /* border: none; */
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 200ms background-color ease-in-out;
+}
+
+#btn-ask:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*  */
+/*  */
+#b-filter {
+    display: flex;
+    justify-content: center;
+}
+
+/*  */
+/*  */
+#b-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.b-card {
+    width: 240px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    border: 1px solid #ededed;
+    border-radius: 10px;
+    /*  */
+    margin-bottom: 20px;
+    margin-right: 20px;
+    /*  */
+    box-sizing: border-box;
+    /* padding: 10px; */
+    transition: 150ms all ease-in-out;
+    cursor: pointer;
+}
+
+#add-question {
+    align-items: center;
+    justify-content: center;
+}
+
+#add-question i {
+    color: #ededed;
+    --ggs: 4;
+    transition: 200ms all ease-in-out;
+}
+
+#add-question i:hover {
+    box-shadow: 0px 0px 10px #ededed;
+}
+
+.b-card:hover {
+    box-shadow: 0px 0px 25px #f5f5f5;
+}
+
+.b-card-top {
+    height: 250px;
+    border-bottom: 1px solid #ededed;
+    box-sizing: border-box;
+    padding: 10px;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+.b-card-top-txt {
+    font-size: 18px;
+}
+
+/*  */
+.b-card-bot {
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.card-info-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.card-info-name {
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.card-info-service {
+    text-transform: lowercase;
+    font-size: 14px;
+}
+
+.card-info-date {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/*  */
+.card-response {
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.card-responce-txt {
+    flex: 1;
+    /*  */
+    background: none;
+    border: none;
+    /*  */
+    border-bottom: 1px solid black;
+    padding: 5px;
+    /* padding-top: 0; */
+}
+
+.card-reponse-btn {
+    cursor: pointer;
+}
+
+/*  */
+/*  */
+#q-form-cont {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /*  */
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    /*  */
+    display: none;
+}
+
+#q-form {
+    background-color: white;
+    border-radius: 10px;
+    width: 60%;
+    height: 55%;
+    /*  */
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /*  */
+    /* text-align: center; */
+}
+
+.q-form-gap {
+    margin-bottom: 20px;
+}
+
+#q-form-title {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+#q-form-service {
+    display: flex;
+    flex-direction: column;
+}
+
+#q-form-service-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#q-form-services {
+    margin-left: 20px;
+}
+
+#q-form-txt {
+    display: flex;
+    flex-direction: column;
+}
+
+#q-form-txtarea {
+    margin-top: 10px;
+    /* width: 100%; */
+    /* height: 100%; */
+}
+
+/*  */
+#q-form-btns {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#q-form-btn-anuller {
+    margin-right: 5px;
+}
+
+/*  */
+@media screen and (max-width:700px) {
+    #b-content {
+        padding-bottom: 60px;
+    }
+}

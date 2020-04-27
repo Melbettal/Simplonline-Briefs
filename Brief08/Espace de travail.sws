@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?PowerDesigner signature="Workspace" version="15.1.0.2850"?>
+<!-- Veuillez ne pas modifier ce fichier -->
+
+<Workspace>
+	<Local Expanded="Yes">
+		<Model Expanded="Yes" ID="{F52FD257-CBC0-444E-8D6B-A09F87501334}" Name="Diagramme de classes UML_2" Type="{18112060-1A4B-11D1-83D9-444553540000}" URL="Diagramme de classes UML_2.moo"/>
+		<Model Expanded="Yes" ID="{BE1E3957-CEAA-450D-B7CF-75E129904B35}" Name="Diagramme de classes UML_2" Selected="Yes" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="Diagramme de classes UML_2.mpd"/>
+	</Local>
+	<BrowserModule Name="Référentiel"/>
+</Workspace>

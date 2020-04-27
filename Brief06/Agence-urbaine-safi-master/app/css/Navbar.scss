@@ -1,0 +1,25 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.mynav {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+.navbar {
+    background-color: transparent;
+}
+
+.nav-link {
+    color: white;
+}
+
+#navbarMenu {
+    // background-color: #96C5F3;
+    justify-content: center;
+}

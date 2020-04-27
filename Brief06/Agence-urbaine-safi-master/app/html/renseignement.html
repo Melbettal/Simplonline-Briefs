@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/globalNavBar.css">
+    <link rel="stylesheet" href="../css/renseignement.css">
+    <script src="../js/renseignement.js"></script>
+    <title>Renseignement</title>
+</head>
+
+<body>
+    <div id="navbarCont">
+        <div id="nb-lg">
+            <div id="nb-logo">
+                <span>Agence</span>
+            </div>
+            <div id="nb-links-cont">
+                <a href="/">Acceuil</a>
+                <a href="/service">Ajouter un service</a>
+                <a href="/renseignement">Renseignement</a>
+                <a href="/inscription">Inscription</a>
+            </div>
+        </div>
+        <div id="nb-md">
+            <a href="/">
+                <div class="element-cont">
+                    <div class="sub-cont">
+                        <i class="gg-home"></i>
+                        <span>Acceuil</span>
+                    </div>
+                </div>
+            </a>
+            <a href="/service">
+                <div class="element-cont">
+                    <div class="sub-cont">
+                        <i class="gg-file-add"></i>
+                        <span>Ajouter un service</span>
+                    </div>
+                </div>
+            </a>
+            <a href="/renseignement">
+                <div class="element-cont">
+                    <div class="sub-cont">
+                        <i class="gg-play-list-add"></i>
+                        <span>Renseignement</span>
+                    </div>
+                </div>
+            </a>
+            <a href="/inscription">
+                <div class="element-cont">
+                    <div class="sub-cont">
+                        <i class="gg-keyhole"></i>
+                        <span>Inscription</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!--  -->
+    <div id="body">
+        <div id="b-header">
+            <h1>Note de renseignement urbanistique.</h1>
+            <span>Demande de note de renseignement urbanistique.</span>
+            <input type="button" value="Demander" id="btn-ask" />
+        </div>
+        <div id="b-filter">
+            <select name="" id="services-filter">
+                <option value="*" selected>Tous</option>
+                <!-- <option value="" >OPTION 1</option> -->
+            </select>
+        </div>
+        <div id="b-content">
+            <div class="b-card" id="add-question">
+                <i class="gg-add"></i>
+            </div>
+            <!--<div class="b-card">
+                <div class="b-card-top"></div>
+                <div class="b-card-bot"></div>
+            </div>
+            <div class="b-card">
+                <div class="b-card-top"></div>
+                <div class="b-card-bot"></div>
+            </div>
+            <div class="b-card">
+                <div class="b-card-top"></div>
+                <div class="b-card-bot"></div>
+            </div>
+            <div class="b-card">
+                <div class="b-card-top"></div>
+                <div class="b-card-bot"></div>
+            </div>
+            <div class="b-card">
+                <div class="b-card-top"></div>
+                <div class="b-card-bot"></div>
+            </div>
+            <div class="b-card">
+                <div class="b-card-top"></div>
+                <div class="b-card-bot"></div>
+            </div>
+            <div class="b-card">
+                <div class="b-card-top"></div>
+                <div class="b-card-bot"></div>
+            </div> -->
+        </div>
+        <!--  -->
+        <div id="q-form-cont">
+            <div id="q-form">
+                <h2 id="q-form-title" class="q-form-gap">Note de renseignement urbanistique</h2>
+                <div id="q-form-service" class="q-form-gap">
+                    <div id="q-form-service-input">
+                        <span>Nature du projet envisagé :</span>
+                        <select id="q-form-services">
+                        </select>
+                    </div>
+                    <span id="q-form-service-desc"></span>
+                </div>
+                <div id="q-form-txt" class="q-form-gap">
+                    <span>Type your question :</span>
+                    <textarea name="" id="q-form-txtarea" placeholder="TEXT..." rows="20"></textarea>
+                </div>
+                <div id="q-form-btns">
+                    <input type="button" value="Anuller" id="q-form-btn-anuller">
+                    <input type="button" value="Postuler" id="q-form-btn-postuler">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
