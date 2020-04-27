@@ -1,8 +1,13 @@
 /*==============================================================*/
 /* Nom de SGBD :  MySQL 5.0                                     */
-/* Date de cr�ation :  27/04/2020 15:39:16                      */
+/* Date de création :  26/04/2020 13:13:24                      */
 /*==============================================================*/
 
+create database dbshopping;
+use dbshopping;
+
+
+/*création des tables de la base de données*/
 
 drop table if exists Admin;
 
@@ -125,4 +130,47 @@ alter table "Order" add constraint FK_Association_4 foreign key (orderId)
 
 alter table Shopping_cart add constraint FK_Association_1 foreign key (customerName)
       references Customer (customerName) on delete restrict on update restrict;
+
+
+
+/*=========================================================================================*/
+/* Création d'un utilisateur avec un accès d’ajouter de nouvelles entrées dans les tableaux*/
+/*=========================================================================================*/
+
+create user 'non-root'@'localhost';
+alter user 'non-root'@'localhost' IDENTIFIED BY 'myhost';
+grant insert on dbshopping.* to 'non-root'@'localhost';
+
+
+
+
+/*==============================================================*/
+/* Insertion                                                    */
+/*==============================================================*/
+insert into Customer values('omar fadili', '15 rue el irfan, temara', 'omar@gmail.com','GH23322JK','20022,32')
+insert into Customer values('khalil ziani', '20 rue massira, rabat', 'malili@gmail.com','HOOL499384','1000,2')
+select * from Customer
+
+/*******/
+
+insert into Administrator values('admin','admin@gmail.com')
+insert into Administrator values('imad','admin@gmail.com')
+select * from Administrator
+
+
+/*==============================================================*/
+/* Suppression                                                  */
+/*==============================================================*/
+
+delete from Customer where email='omar@gmail.com'
+delete from Administartor where adminName='imad'
+
+/*==============================================================*/
+/* Modification                                                 */
+/*==============================================================*/
+
+update Customer set customerName='Newbie' where email='omar@gmail.com'
+
+select * from Customer
+
 
