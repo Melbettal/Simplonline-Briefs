@@ -1,19 +1,12 @@
 /*==============================================================*/
 /* Nom de SGBD :  MySQL 5.0                                     */
-/* Date de création :  28/04/2020 12:12:49                      */
+/* Date de création :  28/04/2020 15:07:01                      */
 /*==============================================================*/
 
-/* CREATION DE DB*/
 
-create database db_cinema;
-use db_cinema;
-
-/* CREATION DES TABLES */
 drop table if exists Admin;
 
 drop table if exists Customer;
-
-drop table if exists "Order";
 
 drop table if exists Order_Details;
 
@@ -22,6 +15,8 @@ drop table if exists Shipping_Info;
 drop table if exists Shopping_cart;
 
 drop table if exists User;
+
+drop table if exists commande;
 
 /*==============================================================*/
 /* Table : Admin                                                */
@@ -46,22 +41,6 @@ create table Customer
    creditCardinfo       varchar(254),
    accountBalance       float,
    primary key (customerName)
-);
-
-/*==============================================================*/
-/* Table : "Order"                                              */
-/*==============================================================*/
-create table "Order"
-(
-   orderId              int not null,
-   dateCreated          varchar(254),
-   dateShipped          varchar(254),
-   customerName         varchar(254),
-   Shi_shippingId       int,
-   customerId           varchar(254),
-   status               varchar(254),
-   shippingId           varchar(254),
-   primary key (orderId)
 );
 
 /*==============================================================*/
@@ -113,23 +92,39 @@ create table User
    primary key (userId)
 );
 
+/*==============================================================*/
+/* Table : commande                                             */
+/*==============================================================*/
+create table commande
+(
+   orderId              int not null,
+   dateCreated          varchar(254),
+   dateShipped          varchar(254),
+   customerName         varchar(254),
+   Shi_shippingId       int,
+   customerId           varchar(254),
+   status               varchar(254),
+   shippingId           varchar(254),
+   primary key (orderId)
+);
+
 alter table Admin add constraint FK_Generalisation_2 foreign key (userId)
       references User (userId) on delete restrict on update restrict;
 
 alter table Customer add constraint FK_Generalisation_1 foreign key (userId)
       references User (userId) on delete restrict on update restrict;
 
-alter table "Order" add constraint FK_Association_3 foreign key (Shi_shippingId)
+alter table Shopping_cart add constraint FK_Association_1 foreign key (customerName)
+      references Customer (customerName) on delete restrict on update restrict;
+
+alter table commande add constraint FK_Association_2 foreign key (customerName)
+      references Customer (customerName) on delete restrict on update restrict;
+
+alter table commande add constraint FK_Association_3 foreign key (Shi_shippingId)
       references Shipping_Info (shippingId) on delete restrict on update restrict;
 
-alter table "Order" add constraint FK_Association_4 foreign key (orderId)
+alter table commande add constraint FK_Association_4 foreign key (orderId)
       references Order_Details (orderId) on delete restrict on update restrict;
-
-alter table "Order" add constraint FK_Association_6 foreign key (customerName)
-      references Customer (customerName) on delete restrict on update restrict;
-
-alter table Shopping_cart add constraint FK_Association_5 foreign key (customerName)
-      references Customer (customerName) on delete restrict on update restrict;
 
 
 /*==============================================================*/
@@ -160,6 +155,3 @@ delete from Administartor where adminName='imad'
 update Customer set customerName='Newbie' where email='omar@gmail.com'
 
 select * from Customer
-
-
-

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{6F05064C-B175-4A9A-B062-7D8424E2D6ED}" Label="" LastModificationDate="1588086420" Name="Diagramme de classes UML_2" Objects="75" Symbols="13" Target="MySQL 5.0" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" signature="PDM_DATA_MODEL_XML" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{6F05064C-B175-4A9A-B062-7D8424E2D6ED}" Label="" LastModificationDate="1588086402" Name="Diagramme de classes UML_2" Objects="75" Symbols="13" Target="MySQL 5.0" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" signature="PDM_DATA_MODEL_XML" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -12,7 +12,7 @@
 <a:Code>DIAGRAMME_DE_CLASSES_UML_2</a:Code>
 <a:CreationDate>1588001818</a:CreationDate>
 <a:Creator>Admin</a:Creator>
-<a:ModificationDate>1588086420</a:ModificationDate>
+<a:ModificationDate>1588001956</a:ModificationDate>
 <a:Modifier>Admin</a:Modifier>
 <a:History>ORG {F52FD257-CBC0-444E-8D6B-A09F87501334}
 DAT 1588001827
@@ -79,7 +79,7 @@ UpdateTableStatistics=Yes
 UpdateColumnStatistics=Yes
 
 [FolderOptions\Physical Objects\Database Generation]
-GenScriptName=dbshopping_v4.sql
+GenScriptName=dbshopping_v2.sql
 GenScriptName0=dbshopping.sql
 GenScriptName1=dbequipe.sql
 GenScriptName2=dbequipe
@@ -90,7 +90,7 @@ GenScriptName6=
 GenScriptName7=
 GenScriptName8=
 GenScriptName9=
-GenPathName=C:\Users\Admin\Desktop\
+GenPathName=C:\Users\Admin\Desktop\Brief08\
 GenSingleFile=Yes
 GenODBC=No
 GenCheckModel=Yes
