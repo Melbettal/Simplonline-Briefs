@@ -1,0 +1,70 @@
+[07/Jun/2020:01:31:32] (I): WordPress Instance Info:
+[07/Jun/2020:01:31:32] (I): Home URL : http://localhost/wordpress/wordpress
+[07/Jun/2020:01:31:32] (I): Site URL : http://localhost/wordpress/wordpress
+[07/Jun/2020:01:31:32] (I): WordPress Version : 5.4.1
+[07/Jun/2020:01:31:32] (I): Onboarding Version : 1.0.1
+[07/Jun/2020:01:31:32] (I): Multisite : No
+[07/Jun/2020:01:31:32] (I): Server Info : Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.3.17
+[07/Jun/2020:01:31:32] (I): PHP Version : 7.3.17
+[07/Jun/2020:01:31:32] (I): HTTPS : No
+[07/Jun/2020:01:31:32] (I): PHP Max Execution Time : 120
+[07/Jun/2020:01:31:32] (I): PHP Max Input Vars : 1000
+[07/Jun/2020:01:31:32] (I): Max Upload Size : 41943040
+[07/Jun/2020:01:31:32] (I): Plugins:
+[07/Jun/2020:01:31:32] (I): [PLUGIN] Beaver Builder Plugin (Lite Version) : v2.3.2.5 (The Beaver Builder Team)
+[07/Jun/2020:01:31:32] (I): [PLUGIN] Elementor : v2.9.11 (Elementor.com)
+[07/Jun/2020:01:31:32] (I): [PLUGIN] Gutenberg : v8.2.1 (Gutenberg Team)
+[07/Jun/2020:01:31:32] (I): [PLUGIN] Orbit Fox Companion : v2.9.9 (Themeisle)
+[07/Jun/2020:01:31:32] (I): [PLUGIN] Beaver Builder Addons by WPZOOM : v1.3.1 (WPZOOM)
+[07/Jun/2020:01:31:32] (P): Saving remote XML
+[07/Jun/2020:01:31:32] (S): Saved remote XML at path C:\xampp\htdocs\wordpress\wordpress/wp-content/uploads/themeisle-demo-import.xml.
+[07/Jun/2020:01:31:32] (P): Starting content import...
+[07/Jun/2020:01:31:32] (S): Import started.
+[07/Jun/2020:01:31:32] (S): Parsing XML file.
+[07/Jun/2020:01:31:32] (P): Starting parsing file:C:\xampp\htdocs\wordpress\wordpress/wp-content/uploads/themeisle-demo-import.xml
+[07/Jun/2020:01:31:32] (P): Processing categories...
+[07/Jun/2020:01:31:32] (S): Processed categories.
+[07/Jun/2020:01:31:32] (P): Processing tags...
+[07/Jun/2020:01:31:32] (S): No tags to process.
+[07/Jun/2020:01:31:32] (P): Processing terms...
+[07/Jun/2020:01:31:32] (S): Processed terms.
+[07/Jun/2020:01:31:32] (P): Processing posts...
+[07/Jun/2020:01:31:32] (S): Custom CSS neve already exists.
+[07/Jun/2020:01:31:32] (S): Media freelancer-01 already exists.
+[07/Jun/2020:01:31:32] (S): Media freelancer-03 already exists.
+[07/Jun/2020:01:31:32] (S): Media freelancer-05 already exists.
+[07/Jun/2020:01:31:32] (S): Media freelancer-06 already exists.
+[07/Jun/2020:01:31:32] (S): Media freelancer-08 already exists.
+[07/Jun/2020:01:31:32] (S): Media freelancer-12 already exists.
+[07/Jun/2020:01:31:32] (S): Media freelancer-13 already exists.
+[07/Jun/2020:01:31:32] (S): Media freelancer-14 already exists.
+[07/Jun/2020:01:31:32] (S): Media freelancer-15 already exists.
+[07/Jun/2020:01:31:32] (P): Processing single menu item ''...
+[07/Jun/2020:01:31:32] (S): Media freelancer-logo already exists.
+[07/Jun/2020:01:31:32] (S): Media freelancer-icon already exists.
+[07/Jun/2020:01:31:32] (S): Media cropped-neve-freelancer-icon.png already exists.
+[07/Jun/2020:01:31:33] (P): Processing single menu item ' About Me '...
+[07/Jun/2020:01:31:33] (S): Media graph already exists.
+[07/Jun/2020:01:31:33] (S): Media 1 already exists.
+[07/Jun/2020:01:31:33] (S): Media 2 already exists.
+[07/Jun/2020:01:31:33] (S): Media star already exists.
+[07/Jun/2020:01:31:33] (S): Media staar already exists.
+[07/Jun/2020:01:31:33] (S): Page Home already exists.
+[07/Jun/2020:01:31:33] (S): Page About me already exists.
+[07/Jun/2020:01:31:33] (S): Page Portfolio already exists.
+[07/Jun/2020:01:31:33] (P): Processing single menu item ''...
+[07/Jun/2020:01:31:33] (S): Processed single menu item.
+[07/Jun/2020:01:31:33] (S): Page Contact already exists.
+[07/Jun/2020:01:31:33] (P): Processing single menu item ''...
+[07/Jun/2020:01:31:33] (S): Processed single menu item.
+[07/Jun/2020:01:31:33] (S): Processed posts.
+[07/Jun/2020:01:31:33] (P): Processing single menu item ''...
+[07/Jun/2020:01:31:33] (S): Processed single menu item.
+[07/Jun/2020:01:31:33] (P): Processing single menu item ' About Me '...
+[07/Jun/2020:01:31:33] (S): Processed single menu item.
+[07/Jun/2020:01:31:33] (P): Cleaning up import with id ...
+[07/Jun/2020:01:31:33] (P): Done cleanup. Flushing cache...
+[07/Jun/2020:01:31:33] (P): Flushed cache. Removing temporary data..
+[07/Jun/2020:01:31:34] (S): Done importing
+[07/Jun/2020:01:31:34] (P): Busting elementor cache
+[07/Jun/2020:01:31:34] (E): No front page ID.
